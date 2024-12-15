@@ -1,0 +1,48 @@
+.card-project-main-container{
+    display: flex;
+}
+.card-project-reviews-part i{
+    color:#ffd200;
+}
+.card-project-price-part{
+    display: flex;
+    gap: 5px;
+}
+.card-project-price-part .card-project-regular-price{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: line-through;
+    color: #8091A7;
+}
+.card-project-price-part .card-project-discount-price{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #6576FF;
+}
+.card-project-categories{
+    display: flex;
+    gap: 43px;
+}
+.card-project-categories__content h4{
+    color:#364A63;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+}
+.card-project-categories__content span{
+    color:#8091A7;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+}
+.card-project-brand-color-container{
+    display: flex;
+    gap:19px;
+}
+.card-project-brand-color{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
