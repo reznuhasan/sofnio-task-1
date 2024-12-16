@@ -30,7 +30,7 @@
                 <h1 class="card-project-regular-price">$99.0</h1>
                 <h1 class="card-project-discount-price">$79.0</h1>
             </div>
-            <p>
+            <p class="card-project-description">
                 I must explain to you how all this mistaken idea of denoun cing ple praising pain was born and I will
                 give you a complete account of the system, and expound the actual teaching.
             </p>
@@ -44,11 +44,72 @@
                     <h4>Forerunner 290XT</h4>
                 </div>
             </div>
+            <h1 class="card-project-brand-color-text">Brand Color</h1>
             <div class="card-project-brand-color-container">
-               
+
+            </div>
+            <h1 class="card-project-wrist-size-text">Wrist Size</h1>
+            <div class="card-project-wrist-size-container">
+                <button> <span class="product-size">S</span> $69</button>
+                <button> <span class="product-size">M</span> $79</button>
+                <button> <span class="product-size">L</span> $89</button>
+                <button> <span class="product-size">XL</span> $99</button>
+            </div>
+            <div class="card-project-add-to-cart-container">
+                <div class="quantity-control">
+                    <button class="quantity-btn decrement-btn" aria-label="Decrement">-</button>
+                    <input type="number" name="quantity" id="quantity" value="" min="" aria-label="Quantity" />
+                    <button class="quantity-btn increment-btn" aria-label="Increment">+</button>
+                </div>
+                <button class="add-to-cart-button" aria-label="Decrement">Add To Cart</button>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="card-project-checkout-container">
+        <button class="checkout-btn">Checkout <span class="checkout-number">2</span></button>
+    </div>
+
+    <!-- Modal Structure -->
+    <!-- Modal Structure -->
+    <div id="checkoutModal" class="modal">
+        <div class="modal-content">
+            <div class="cart-container">
+                <h2>Your Cart</h2>
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Color</th>
+                            <th>Size</th>
+                            <th>Qnt</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- Items will be dynamically populated -->
+                    </tbody>
+                </table>
+
+                <div class="cart-summary">
+                    <p><strong>Total</strong></p>
+                    <div class="price-part">
+                        <p><span id="total-quantity">0</span></p>
+                        <p>$<span id="total-price">0.00</span></p>
+                    </div>
+                   
+                </div>
+
+                <div class="cart-buttons">
+                    <button id="continueShopping" class="continue-btn">Continue Shopping</button>
+                    <button id="finalCheckout" class="final-checkout">Checkout</button>
+                </div>
             </div>
         </div>
     </div>
+
+
     <script src="./app.js"></script>
 </body>
 
