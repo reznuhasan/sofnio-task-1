@@ -3,7 +3,12 @@
     gap: 60px;
     align-items: center;
 }
-
+.card-project-main-heading{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    color:#364A63;
+}
 .card-project-main-container__main-thumb {
     width: 630px;
     height: 721px;
@@ -17,7 +22,9 @@
 .card-project-reviews-part i {
     color: #ffd200;
 }
-
+.card-project-reviews-part span{
+    color:#8091A7;
+}
 .card-project-price-part {
     display: flex;
     gap: 5px;
@@ -54,14 +61,12 @@
     color: #364A63;
     font-weight: 700;
     font-size: 16px;
-    line-height: 23px;
 }
 
 .card-project-categories__content span {
     color: #8091A7;
     font-weight: 400;
     font-size: 14px;
-    line-height: 23px;
 }
 
 .card-project-brand-color-text,
@@ -115,8 +120,7 @@
     width: 40px;
     height: 42px;
     font-size: 24px;
-    display: inline-flex
-;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -129,8 +133,6 @@ input[type="number"] {
     text-align: center;
     border: 1px solid #ccc;
     font-size: 18px;
-    /* margin: 0 5px; */
-    /* border-radius: 5px; */
     outline: none;
 }
 
@@ -263,4 +265,48 @@ input[type="number"]:focus {
   }
   
   
-  
+  /* for Tablet */
+  @media (max-width: 800px) {
+    .card-project-main-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+    }
+    .card-project-main-container__main-thumb{
+        height: 520px;
+        margin: 0 auto;
+    }
+    .card-project-main-container__main-thumb img{
+        width: 600px;
+        height: 520px;
+    }
+    .card-project-main-container__main-content {
+        width: 600px;
+        height: 539px;
+    }
+    .cart-container{
+        width: 550px;
+    }
+  }
+  @media (max-width: 600px) {
+    .card-project-main-container {
+        flex-direction: column;
+        justify-content: center;
+        gap:0px;
+    }
+    .card-project-main-container__main-thumb{
+        height: 400px;
+        margin: 0 auto;
+    }
+    .card-project-main-container__main-thumb img{
+        width: 400px;
+        height: 400px;
+    }
+    .card-project-main-container__main-content {
+        width: 500px;
+        height: 539px;
+    }
+    .cart-container{
+        width: 400px;
+    }
+  }
